@@ -1,0 +1,62 @@
+nav {
+  height: 75px;
+}
+
+.logo-layout,
+.logo-number-2 {
+  color: #212121;
+  font-family: 'Montserrat-Regular';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.logo-number-2 {
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+
+.nav-links {
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+}
+
+.nav-links > a {
+  margin: 0 20px;
+  color: #616161;
+  text-transform: uppercase;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.about-title-inscription {
+  color: #bdbdbd;
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.about-title {
+  color: #212121;
+  font-family: 'Montserrat-Regular';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  text-align: center;
+  color: #616161;
+  font-family: 'OpenSans-Regular';
+  font-size: 16px;
+}
+
+.btn-read-more {
+  margin-top: 15px;
+  padding: 15px 50px;
+  border: 2px solid #212121;
+  color: #212121;
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
