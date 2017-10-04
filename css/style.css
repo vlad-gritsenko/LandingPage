@@ -1,5 +1,12 @@
+/*-------------------Top section-------------------*/
 nav {
+  display: flex;
   height: 75px;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
 }
 
 .logo-layout,
@@ -16,6 +23,8 @@ nav {
 }
 
 .nav-links {
+  display: flex;
+  justify-content: flex-end;
   font-family: 'Montserrat-Regular';
   font-size: 16px;
 }
@@ -25,8 +34,14 @@ nav {
   color: #616161;
   text-transform: uppercase;
 }
+/*---------------------------------------------*/
 
-.about {
+
+/*-----------------About section-----------------*/
+.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 100px 0;
 }
 
@@ -60,3 +75,340 @@ nav {
   font-size: 14px;
   text-transform: uppercase;
 }
+/*------------------------------------------------*/
+
+
+/*-----------------Services section---------------*/
+.services .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.services-title {
+  font-family: 'Montserrat-Regular';
+  font-size: 30px;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.services-title-inscription {
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  display: flex;
+  max-width: 365px;
+}
+
+.service-icon {
+  position: relative;
+  height: 75px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.service-icon::before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #ff6e40;
+  border-left: 2px solid #ff6e40;
+}
+
+.service-icon::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #ff6e40;
+  border-right: 2px solid #ff6e40;
+}
+
+.border-wrap::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #ff6e40;
+  border-left: 2px solid #ff6e40;
+}
+
+.border-wrap::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #ff6e40;
+  border-right: 2px solid #ff6e40;
+}
+
+.service-item .fa {
+  display: block;
+  width: 75px;
+  height: 75px;
+  padding-top: 20%;
+  font-size: 48px;
+  text-align: center;
+  color: #ff6e40;
+}
+
+.service-item-title {
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.service-text {
+  color: #616161;
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+}
+/*----------------------------------------------*/
+
+
+/*-----------------Subscribe section-------------*/
+.subscribe {
+  padding: 40px 0;
+  background-color: #424242
+}
+
+.subscribe .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe-title {
+  font-family: 'Montserrat-Regular';
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.subscribe-inscription {
+  color: #bdbdbd;
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+}
+
+.btn-subscribe-now {
+  color: #ffffff;
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  padding: 15px 75px;
+  border: 2px solid #ff6e40;
+  text-transform: uppercase;
+}
+/*-----------------------------------------*/
+
+/*-----------Our works section------------*/
+.works .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.works-inscription {
+  color: #bdbdbd;
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.works-title {
+  color: #212121;
+  font-family: 'Montserrat-Regular';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.work-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-item:hover .work-item-icon {
+  opacity: 1;
+  transition: .5s;
+}
+
+.work-item:hover .work-item-descr {
+  bottom: 0;
+  transition: .5s;
+}
+
+.work-item-icon {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #ff6e40;
+  opacity: 0;
+  transition: .5s;
+}
+
+.work-item-icon .fa {
+  display: inline-block;
+  padding: 18px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.work-item-descr {
+  display: flex;
+  position: absolute;
+  bottom: -100px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.work-item-descr span:first-child {
+  color: #ff6e40;
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.work-item-descr span:nth-child(2) {
+color: #757575;
+font-family: "OpenSans-Regular";
+font-size: 16px;
+}
+
+
+
+
+
+
+/*----------------------------------------*/
+
+/*------------Contact section-------------*/
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.contact-inscription {
+  color: #bdbdbd;
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contact-title {
+  color: #212121;
+  font-family: 'Montserrat-Regular';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.place,
+.telephone,
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.place span,
+.telephone span,
+.email span {
+  color: #616161;
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+}
+
+.place-icon,
+.telephone-icon,
+.email-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  background-color: #ff6e40;
+  border-radius: 100%;
+}
+
+.place-icon {
+  padding: 15px 0 0 22px;
+}
+
+.telephone-icon {
+  padding: 15px 0 0 17px;
+}
+
+.email-icon {
+  padding: 15px 0 0 17px;
+}
+
+.contact .fa {
+  color: #fff;
+  font-size: 30px;
+}
+/*------------------------------------*/
+
+/*--------------Footer--------------*/
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.copyright,
+.privacy-terms {
+  color: #757575;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+}
+
+footer .fa {
+  margin-right: 20px;
+  color: #bdbdbd;
+  font-size: 16px;
+}
+
+footer .fa:last-child {
+  margin-right: 0;
+}
+
+/*----------------------------------*/
