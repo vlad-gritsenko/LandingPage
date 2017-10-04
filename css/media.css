@@ -8,3 +8,20 @@
     margin-bottom: 20px;
   }
 }
+
+/*-----Mobile design--------*/
+
+@media screen and (max-width: 768px) {
+
+  .logo-layout,
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+}
+
+/*--------------------------*/

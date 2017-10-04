@@ -121,3 +121,12 @@ left.addEventListener('click', function(e){
   }
   console.log(click);
 });
+
+// Клик по гамбургеру
+
+var ham = document.querySelector('.hamburger');
+var mobMenu = document.querySelector('.mob-nav-links');
+
+ham.addEventListener('click', function() {
+  mobMenu.classList.toggle('active');
+});
