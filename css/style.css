@@ -139,7 +139,7 @@ nav .container {
   display: inline-block;
   width: 100vw;
   padding: 160px 0;
-  background: url(/images/slide1.jpg);
+  background: url(../images/slide1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: 1s;
