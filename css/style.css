@@ -6,16 +6,23 @@ body {
 nav {
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 75px;
   background-color: #fff;
+  border-bottom: 2px solid #e3e3e3;
   z-index: 2;
 }
 
 nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo-layout,
@@ -32,8 +39,12 @@ nav .container {
 }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-family: 'Montserrat-Regular';
   font-size: 16px;
 }
@@ -80,13 +91,15 @@ nav .container {
   top: 70px;
   left: 0;
   display: none;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100vw;
   padding: 20px 0;
-  border-top: 1px solid #e3e3e3;
   background-color: #fff;
-  box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 4px 8px rgba(0,0,0,.5);
+          box-shadow: 1px 4px 8px rgba(0,0,0,.5);
 }
 
 .mob-nav-links a {
@@ -98,6 +111,8 @@ nav .container {
 }
 
 .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -107,12 +122,16 @@ nav .container {
 /*---------------------Slider-------------------*/
 .slider {
   position: relative;
-  margin-top: 75px;
+  margin-top: 73px;
   overflow-x: hidden;
 }
 
 .slide-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 9999px;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -122,30 +141,30 @@ nav .container {
   padding: 160px 0;
   background: url(/images/slide1.jpg);
   background-size: cover;
-  filter: blur();
   background-repeat: no-repeat;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
-.slide-arrow-left,
-.slide-arrow-right {
+.owl-next,
+.owl-prev {
   position: absolute;
   border: 2px solid #ff6e40;
   cursor: pointer;
   z-index: 1;
 }
 
-.slide-arrow-left:hover,
-.slide-arrow-right:hover {
+.owl-next:hover,
+.owl-prev:hover {
   background-color: #ff6e40;
 }
 
-.slide-arrow-left {
+.owl-prev {
   top: calc(50% - 20px);
   left: 20px;
 }
 
-.slide-arrow-right {
+.owl-next {
   top: calc(50% - 20px);
   right: 20px;
 }
@@ -158,10 +177,19 @@ nav .container {
 }
 
 .slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slide-title {
@@ -194,9 +222,16 @@ nav .container {
 
 /*-----------------About section-----------------*/
 .about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 0;
 }
 
@@ -222,11 +257,14 @@ nav .container {
   font-size: 16px;
 }
 
+.about a {
+  color: #212121;
+}
+
 .btn-read-more {
   margin-top: 15px;
   padding: 15px 50px;
   border: 2px solid #212121;
-  color: #212121;
   font-family: 'Montserrat-Regular';
   font-size: 14px;
   text-transform: uppercase;
@@ -241,9 +279,16 @@ nav .container {
 
 /*-----------------Services section---------------*/
 .services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 0;
 }
 
@@ -263,12 +308,19 @@ nav .container {
 }
 
 .service-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 360px;
 }
@@ -360,9 +412,15 @@ nav .container {
 }
 
 .subscribe .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .subscribe-title {
   font-family: 'Montserrat-Regular';
@@ -384,6 +442,7 @@ nav .container {
   padding: 15px 75px;
   border: 2px solid #ff6e40;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .btn-subscribe-now:hover {
@@ -393,9 +452,16 @@ nav .container {
 
 /*-----------Our works section------------*/
 .works .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 0;
 }
 
@@ -415,9 +481,14 @@ nav .container {
 }
 
 .work-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .work-item {
@@ -430,11 +501,13 @@ nav .container {
 
 .work-item:hover .work-item-icon {
   opacity: 1;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 .work-item:hover .work-item-descr {
   bottom: 0;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -447,6 +520,7 @@ nav .container {
   border-radius: 100%;
   background-color: #ff6e40;
   opacity: 0;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -458,14 +532,22 @@ nav .container {
 }
 
 .work-item-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: -100px;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 30px 0;
   background-color: #fff;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -489,9 +571,15 @@ font-size: 16px;
 }
 
 .contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 50px 0;
 }
 
@@ -512,8 +600,12 @@ font-size: 16px;
 .place,
 .telephone,
 .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .place span,
@@ -566,8 +658,12 @@ footer {
 }
 
 footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 25px 0;
 }
 
@@ -596,6 +692,7 @@ footer .fa:last-child {
 /*----------------------------------*/
 
 .arrow-up {
+  display: none;
   position: fixed;
   right: 30px;
   bottom: 30px;

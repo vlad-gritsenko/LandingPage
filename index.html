@@ -11,15 +11,17 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <title>Homepage</title>
 </head>
 <body>
   <nav>
     <div class="container">
-      <div class="logo col-lg-4 col-md-4 col-sm-4">
+      <a href='#slider' class="logo col-lg-4 col-md-4 col-sm-4">
         <span class="logo-layout">layout</span>
         <span class="logo-number-2">2</span>
-      </div>
+      </a>
 
       <div class="mobile-menu col-sm-8">
         <div class="hamburger">
@@ -45,25 +47,7 @@
     </div>
   </nav>
 
-  <div class="slider">
-
-    <span class="slide-arrow-left">
-      <i class="fa fa-angle-left" aria-hidden="true"></i>
-    </span>
-
-    <span class="slide-arrow-right">
-      <i class="fa fa-angle-right" aria-hidden="true"></i>
-    </span>
-    <div class="slide-wrapper">
-      <div class="slide">
-        <div class="container">
-          <div class="slide-content">
-            <span class="slide-title">Lorem ipsum dolor</span>
-            <span class="slide-inscription">Aenean id ligula aliquam dolor tristique fringilla</span>
-            <a href="#" class="btn-start-now">Start now</a>
-          </div>
-        </div>
-      </div>
+  <div class="owl-carousel" id="slider">
 
       <div class="slide">
         <div class="container">
@@ -84,10 +68,19 @@
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="slide">
+        <div class="container">
+          <div class="slide-content">
+            <span class="slide-title">Lorem ipsum dolor</span>
+            <span class="slide-inscription">Aenean id ligula aliquam dolor tristique fringilla</span>
+            <a href="#" class="btn-start-now">Start now</a>
+          </div>
+        </div>
+      </div>
   </div>
 
-  <section class="about" id="about">
+  <div class="about" id="about">
     <div class="container">
       <span class="about-title-inscription">Donec tristique rutrum</span>
       <h1 class="about-title">About company</h1>
@@ -115,9 +108,9 @@
          faucibus massa est a massa.</p>
       <a href="#" class="btn-read-more">read more</a>
     </div>
-  </section>
+  </div>
 
-  <section class="services" id="services">
+  <div class="services" id="services">
     <div class="container">
       <span class="services-title-inscription">Lorem ipsum</span>
       <h1 class="services-title">Our services</h1>
@@ -191,7 +184,7 @@
                   <div class="service-item">
                     <div class="service-icon">
                       <div class="border-wrap">
-                        <i class="fa fa-graduation-cap" aria-hidden="<tr></tr>ue">  </i>
+                        <i class="fa fa-graduation-cap" aria-hidden="true">  </i>
                       </div>
                     </div>
                     <div class="service-descr-wrap">
@@ -202,9 +195,9 @@
                     </div>
                   </div>
     </div>
-    </section>
+    </div>
 
-  <section class="subscribe">
+  <div class="subscribe">
     <div class="container">
       <div class="subscribe-text-wrapper">
         <span class="subscribe-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
@@ -212,9 +205,9 @@
       </div>
       <a href="#" class="btn-subscribe-now">Subscribe now</a>
     </div>
-  </section>
+  </div>
 
-  <section class="works" id="works">
+  <div class="works" id="works">
     <div class="container">
       <span class="works-inscription">Morbi rhoncus</span>
       <h2 class="works-title">Our works</h2>
@@ -286,9 +279,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="contact" id="contact">
+  <div class="contact" id="contact">
     <div class="container">
       <div class="contact-text-wrapper">
         <span class="contact-inscription">tristique</span>
@@ -317,9 +310,9 @@
       </div>
 
     </div>
-  </section>
+  </div>
 
-  <section class="gmap"></section>
+  <div class="gmap"></div>
 
   <footer>
     <div class="container">
@@ -338,9 +331,11 @@
     </div>
   </footer>
 
-  <a href="#about" class="arrow-up">
+  <a href="#slider" class="arrow-up">
     <i class="fa fa-angle-up" aria-hidden="true"></i>
   </a>
+  <script src='js/jquery.js'></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src='js/script.js'></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpx3uVnMRUaLrw0-hRNYTY9FBoDhzc8RI&callback=myMap"></script>
 </body>

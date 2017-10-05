@@ -11,7 +11,7 @@
 
 /*-----Mobile design--------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .logo-layout,
   .nav-links {
@@ -22,6 +22,70 @@
     display: flex;
   }
 
+  .slide-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .slide-inscription {
+    margin-bottom: 150px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 0 10px;
+  }
+
+  .services .container {
+    padding-top: 0;
+  }
+
+  .service-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe .container {
+    flex-wrap: wrap;
+  }
+
+  .btn-subscribe-now {
+    margin-top: 15px;
+  }
+
+  .works .container {
+    overflow: hidden;
+  }
+
+  .work-items {
+    justify-content: center;
+  }
+
+  .contact .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .contact-title {
+    margin-bottom: 20px;
+  }
+
+  .place,
+  .telephone,
+  .email {
+    margin-bottom: 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .social-icons {
+    margin: 20px 0;
+  }
 }
 
 /*--------------------------*/

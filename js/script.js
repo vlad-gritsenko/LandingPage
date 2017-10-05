@@ -1,3 +1,4 @@
+// Google maps
 function myMap() {
   myLatLng = {lat: 38.707103, lng: -77.021698};
   map = new google.maps.Map(document.querySelector('.gmap'), {
@@ -90,43 +91,46 @@ function myMap() {
     map: map
   });
 }
-
-var right = document.querySelector('.slide-arrow-right');
-var left = document.querySelector('.slide-arrow-left');
-var slideWrapper = document.querySelector('.slide-wrapper');
-var slide = document.querySelector('.slide');
-
-var offSet = 0; //ширина сдвига слайда
-var width = document.querySelector('.slide').offsetWidth + 5; //ширина слайда
-var click = 0;
-
-
-// Обработка кликов по кнопкам слайдера
-right.addEventListener('click', function(){
-
-  if ( !(click >= 2) ) {
-    offSet = offSet - width;
-    slideWrapper.style.transform = 'translateX('+offSet+'px)';
-    click ++;
-  }
-  console.log(click);
-});
-
-left.addEventListener('click', function(e){
-
-  if ( !(click <= 0) ) {
-    offSet = offSet + width;
-    slideWrapper.style.transform = 'translateX('+offSet+'px)';
-    click --;
-  }
-  console.log(click);
-});
+//---------------------------------------------
 
 // Клик по гамбургеру
-
 var ham = document.querySelector('.hamburger');
 var mobMenu = document.querySelector('.mob-nav-links');
 
 ham.addEventListener('click', function() {
   mobMenu.classList.toggle('active');
+});
+//---------------------------------------------
+
+// Отображение кнопки "наверх" при скролле
+var arrowUp = document.querySelector('.arrow-up');
+
+window.onscroll = function() {
+  if (window.pageYOffset > 200) {
+    arrowUp.style.display = 'block';
+  }
+
+  else if (window.pageYOffset < 200) {
+    arrowUp.style.display = 'none';
+  }
+};
+//---------------------------------------------
+
+// Плавный скролл к якорям
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
+// Owl carousel
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>',
+              '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+  });
 });
