@@ -1,3 +1,3 @@
 # LandingPage
 
-See [DEMO](https://vlad-gritsenko.github.io/LandingPage/)
+See [Demo](https://vlad-gritsenko.github.io/LandingPage/)
